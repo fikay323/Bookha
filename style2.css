@@ -1,11 +1,32 @@
-@media (max-width: 1977px) {
+@media (min-width: 1543px) {
     :root {
-        --padding-x: 7rem;
+        --padding-x: 5rem;
         --padding-y: 24px;
         --review-padding-y: 3.75rem;
+        --hero-section-title-size: 2.25rem;
+        --hero-section-description-size: 1rem;
     }
 }
-@media (max-width: 1523px) {
+@media (max-width: 1542px) {
+    :root {
+        --padding-x: 5rem;
+        --padding-y: 24px;
+        --review-padding-y: 3.75rem;
+        --hero-section-title-size: 2.25rem;
+        --hero-section-description-size: 1rem;
+    }
+    .collections {
+        gap: 1rem;
+        justify-content: space-between;
+    }
+    .item {
+        max-width: 300px;
+    }
+    .item .image-container {
+        padding: 2.4rem 3rem;
+    }
+}
+@media (max-width: 923px) {
     :root {
         --big-number-size: 2rem;
         --hero-section-title-size: 2.25rem;
@@ -34,6 +55,7 @@
     }
     .collections {
         gap: 2rem;
+        justify-content: space-around;
     }
     .item {
         max-width: 350px;

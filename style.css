@@ -5,7 +5,7 @@
     --review-padding-y: 3.75rem;
     --big-number-size: 3.5rem;
     --stat-info-size: 
-    --hero-section-title-size: 4rem;
+    --hero-section-title-size: 90px;
     --hero-section-description-size: 1.25rem;
     --logo-size: 2rem;
 }
@@ -53,7 +53,6 @@ body {
     margin-right: auto;
     font-weight: 900;
     font-size: var(--logo-size);
-    /* background-color: red; */
 }
 .logo svg {
     height: var(--logo-size) !important;
@@ -151,7 +150,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5rem;
-    justify-content: space-around;
 }
 .item {
     display: flex;
@@ -209,11 +207,13 @@ body {
     gap: 3.75rem;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 .offer-item {
     padding: 2.5rem;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.05);
     border-radius: 1.25rem;
+    flex-basis: calc(33% - 10rem);
 }
 .offer-item h4 {
     font-size: 1.75rem;
@@ -241,7 +241,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     padding: 1.5rem 2.5rem;
-    flex-basis: calc(50% - 7rem);
+    flex-basis: calc(50% - 10rem);
 }
 .review {
     font-size: 1.125rem;
