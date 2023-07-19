@@ -61,7 +61,7 @@
         --logo-size: 1.3rem;
     }
     .statistics .frame {
-        min-width: 50%;
+        min-width: 30%;
     }
     .explore .description {
         font-size: 1.25rem;
