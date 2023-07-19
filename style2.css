@@ -24,11 +24,14 @@
     .hero-section img {
         max-width: 40%;
     }
+}
+@media (max-width: 1069px) {
     .navbar-nav {
         display: none;
     }
-}
-@media (max-width: 1069px) {
+    .hamburger-menu {
+        display: block;
+    }
     .collections {
         gap: 2rem;
     }
