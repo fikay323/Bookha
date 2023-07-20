@@ -196,7 +196,7 @@ body {
     justify-content: end;
 }
 .info:nth-child(2) .details:nth-child(2) {
-    align-items: center;
+    align-items: flex-start !important;
 }
 .info .details img {
     width: 0.69175rem;
