@@ -88,8 +88,8 @@
     .statistics .frame {
         min-width: 30%;
     }
-    .explore .description {
-        font-size: 1.25rem;
+    .explore .description h3 {
+        font-size: 1.26rem;
         font-weight: 500;
     }
 }
@@ -109,12 +109,19 @@
     }
 }
 @media (max-width: 460px) {
+    :root {
+        --notification-bar-padding-y: 0.15rem;
+    }
     .Our-Offerings {
         align-items: start;
     }
     .section-header {
         font-size: 1.75rem;
         white-space: nowrap;
+    }
+    .explore .description {
+        font-size: 1.2672rem;
+        font-weight: 700 !important;
     }
 }
 @media (max-width: 400px) {
