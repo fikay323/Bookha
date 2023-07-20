@@ -329,3 +329,147 @@ footer {
     flex-direction: row;
     gap: 1rem;
 }
+@media (min-width: 1543px) {
+    :root {
+        --padding-x: 5rem;
+        --padding-y: 24px;
+        --review-padding-y: 3.75rem;
+        --hero-section-title-size: 2.25rem;
+        --hero-section-description-size: 1rem;
+    }
+}
+@media (max-width: 1542px) {
+    :root {
+        --padding-x: 5rem;
+        --padding-y: 24px;
+        --review-padding-y: 3.75rem;
+        --hero-section-title-size: 2.25rem;
+        --hero-section-description-size: 1rem;
+    }
+    .collections {
+        gap: 1rem;
+        justify-content: space-between;
+    }
+    .item {
+        max-width: 300px;
+    }
+    .item .image-container {
+        padding: 2.4rem 3rem;
+    }
+}
+@media (max-width: 923px) {
+    :root {
+        --big-number-size: 2rem;
+        --hero-section-title-size: 2.25rem;
+        --hero-section-description-size: 1rem;
+        --logo-size: 1.5rem;
+    }
+    .offers-container, .review-container, footer {
+        gap: 1.35rem;
+    }
+    .offer-item {
+        flex-basis: calc(50% - 5.75rem);
+    }
+    .footer-item {
+        flex-basis: 40%;
+    }
+    .hero-section img {
+        max-width: 40%;
+    }
+}
+@media (max-width: 1069px) {
+    .navbar-nav {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .collections {
+        gap: 2rem;
+        justify-content: space-around;
+    }
+    .item {
+        max-width: 350px;
+    }
+    .item .image-container {
+        padding: 2.4rem 4.9rem;
+    }
+}
+@media (max-width: 972px) {
+    :root {
+        --padding-x: 5rem;
+    }
+    .item {
+        max-width: 300px;
+    }
+    .item .image-container {
+        padding: 2.4rem 3rem;
+    }
+}
+@media (max-width: 842px) {
+    :root {
+        --hero-section-title-size: 2rem;
+    }
+}
+@media (max-width: 792px) {
+    :root {
+        --padding-x: 1.25rem;
+        --logo-size: 1.3rem;
+    }
+    .statistics .frame {
+        min-width: 30%;
+    }
+    .explore .description h3 {
+        font-size: 1.26rem;
+        font-weight: 500;
+    }
+}
+@media (max-width: 671px) {
+    .hero-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hero-section button{
+        width: 100%;
+    }
+    .hero-section img {
+        min-width: 100%;
+    }
+    .offer-item, .review-item, .footer-item {
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 460px) {
+    :root {
+        --notification-bar-padding-y: 0.15rem;
+    }
+    .Our-Offerings {
+        align-items: start;
+    }
+    .section-header {
+        font-size: 1.75rem;
+        white-space: nowrap;
+    }
+    .explore .description {
+        font-size: 1.2672rem;
+        font-weight: 700 !important;
+    }
+}
+@media (max-width: 400px) {
+    :root {
+        --big-number-size: 1.5rem;
+        --hero-section-title-size: 2rem;
+        --hero-section-description-size: 1rem;
+    }
+    .statistics .frame .title {
+        font-size: 1rem;
+    }
+    .offer-item h4 {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 330px) {
+    .section-header {
+        font-size: 1.45rem;
+    }
+}
