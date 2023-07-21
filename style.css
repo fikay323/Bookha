@@ -235,6 +235,7 @@ body {
 
 .collections {
   padding: 2.5rem 0;
+  list-style-type: none;
   gap: 5rem;
   display: grid;
   grid-template-columns: var(--explore-grid-column);
