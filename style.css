@@ -6,11 +6,13 @@
   --padding-x: 7.5rem;
   --padding-y: 1.5rem;
   --notification-bar-padding-y: var(--padding-y);
-  --review-padding-y: 3.75rem;
+  --review-padding-y: 7.5rem;
   --notification-bar-text-size: 1rem;
   --notification-bar-icon-size: 1.5rem;
   --big-number-size: 3.5rem;
+  --big-number-line-height: 4.125rem;
   --stat-info-size: 1.25rem;
+  --stat-info-line-height: 2.125rem;
   --statistics-inner-padding: 6.25rem;
   --hero-section-title-size: 4rem;
   --hero-section-title-line-height: 4.75rem;
@@ -20,6 +22,7 @@
   --hero-section-margin-bottom: 5rem;
   --explore-section-title-size: 2rem;
   --explore-grid-column: repeat(3, 1fr);
+  --explore-section-item-row-gap: 5rem;
   --logo-size: 2rem;
   --footer-section-subscribe-email-input-length: 23.4375rem;
 }
@@ -177,7 +180,7 @@ body {
   color: #09c269;
   font-size: var(--big-number-size);
   font-weight: 700;
-  line-height: 4.125rem;
+  line-height: var(--big-number-line-height);
   margin-top: 10px;
 }
 
@@ -189,7 +192,7 @@ body {
 .statistics .frame .title {
   font-size: var(--stat-info-size);
   font-weight: 700;
-  margin-top: -10px;
+  line-height: var(--stat-info-line-height);
 }
 
 .Big-Number,
@@ -236,7 +239,7 @@ body {
 .collections {
   padding: 2.5rem 0;
   list-style-type: none;
-  gap: 5rem;
+  row-gap: var(--explore-section-item-row-gap);
   display: grid;
   grid-template-columns: var(--explore-grid-column);
 }
@@ -245,8 +248,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  max-width: 380px;
   justify-self: center;
+  width: 100%;
 }
 
 .item .image-container {
@@ -313,7 +316,7 @@ body {
   padding: 2.5rem;
   box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.05);
   border-radius: 1.25rem;
-  flex-basis: calc(33% - 10rem);
+  flex-basis: calc(33% - 8rem);
 }
 
 .offer-item h4 {
@@ -373,7 +376,7 @@ body {
 /* Footer Section */
 footer {
   margin-top: 5rem;
-  padding: var(--review-padding-y) var(--padding-x);
+  padding: 3.75rem var(--padding-x) var(--review-padding-y);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -440,7 +443,7 @@ footer {
 
 @media (max-width: 1542px) {
   .collections {
-    gap: 1rem;
+    column-gap: 1rem;
     justify-content: space-between;
   }
 
@@ -453,9 +456,11 @@ footer {
   :root {
     --padding-x: 5rem;
     --padding-y: 24px;
-    --review-padding-y: 3.75rem;
-    --big-number-size: 2rem;
+    --review-padding-y: 5rem;
+    --big-number-size: 1.75rem;
+    --big-number-line-height: 2.5rem;;
     --stat-info-size: 1rem;
+    --stat-info-line-height: 1.5rem;
     --statistics-inner-padding: 2.5rem;
     --hero-section-title-size: 2.25rem;
     --hero-section-description-size: 1rem;
@@ -467,6 +472,7 @@ footer {
     --hero-section-description-margin: 0.75rem 0 1rem;
     --explore-section-title-size: 1.75rem;
     --explore-grid-column: repeat(2, 1fr);
+    --explore-section-item-row-gap: 3rem;
     --footer-section-subscribe-email-input-length: 22.5625rem;
   }
 
@@ -499,7 +505,6 @@ footer {
   }
 
   .collections {
-    gap: 2rem;
     justify-content: space-around;
   }
 
@@ -532,6 +537,9 @@ footer {
     --notification-bar-text-size: 0.875rem;
     --notification-bar-icon-size: 1.5rem;
     --big-number-size: 1.5rem;
+    --big-number-line-height: 2.5rem;;
+    --stat-info-size: 1rem;
+    --stat-info-line-height: 1.5rem;
     --stat-info-size: 1rem;
     --statistics-inner-padding: 1.25rem;
     --hero-section-title-size: 2.25rem;
@@ -539,7 +547,8 @@ footer {
     --logo-size: 1.5rem;
     --hero-section-margin-bottom: 2rem;
     --explore-section-title-size: 1.75rem;
-    --footer-section-subscribe-email-input-length: 22.5625rem;
+    --explore-section-item-row-gap: 2rem;
+    --footer-section-subscribe-email-input-length: 100%;
   }
 
   .statistics .frame {
